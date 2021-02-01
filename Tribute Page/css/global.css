@@ -1,0 +1,157 @@
+body {
+   background-image: linear-gradient(90deg, red, blue);
+}
+
+#main {
+   background-image: linear-gradient(180deg, yellow, blue, red);
+   display: grid;
+   width:100%;
+   grid-templates-row: 200px 200px;
+   border-radius: 4px;
+   border: 2px;
+}
+
+#title {   
+   background-color: #7e96ff;
+   width: 400px; 
+   justify-self: center;
+   text-align: center;
+   box-shadow: 5px 10px #a9a9a9;  
+   border-radius: 10px;
+   font-family: Pacifico, cursive ;
+   color: ##6cbdff;
+   font-weight:100;
+   z-index:100;
+}
+#img-div {
+      justify-self: center;
+      margin: -60px 0px 0px 0px;     
+}
+#img-div img {     
+      border-radius: 40px;
+      box-shadow: 5px 5px #3d3d3d; 
+      z-index: -1;
+}
+.nav {
+   display: grid;
+   flex-direction: row;  
+   background-color: #7e96ff;
+   width: 150px;
+   position: fixed;
+   justify-self: center;
+   border-radius: 50px; 
+   box-shadow: -5px -5px #3d3d3d;
+   margin:10px; 
+   font-weight:bold;
+   color:black;
+   font-family: Pacifico, cursive;
+}
+.nav-a1 {
+   text-decoration:none;
+   color:black;
+   
+}
+.nav-a2 {
+   text-decoration:none;
+   color:black;
+}
+.nav-a3 {
+   text-decoration:none;
+   color:black;
+}
+a:hover {
+   color: white;
+}
+
+#boxes {
+   display: flex;
+   flex-direction: column;
+   width:900px;
+   justify-self: center;
+   margin: 10px 10px 10px 10px;
+   background-color: #7e96ff;
+   border-radius: 10px;
+   box-shadow: 5px 5px #3d3d3d; 
+}
+
+#tribute-info {
+   background-color: white;
+   margin: 10px 10px 10px 10px;
+   border-radius: 5px;
+   padding: 20px 20px 20px 20px;  
+   justify-self: center;
+   text-align: justify;
+   text-indent: 40px;
+   line-height: 1.8;
+   font-size: 18px;
+}
+
+.footer {  
+   display: grid;
+   grid-template-rows: 2px;
+   background-color: green;
+   width:880px;  
+   height: 60px; 
+   justify-self: center;
+   background-color: #7e96ff;
+   border-radius: 10px;
+   box-shadow: 5px 5px #3d3d3d; 
+   padding: 10px; 
+}
+.mySelf {
+   justify-self: self-end;
+   font-family: Pacifico, cursive;
+   font-size: 28px;
+   padding-top:10px;
+   padding-right: 20px;
+   text-transform: capitalize;
+}
+.skills {
+   height: 40px;
+   padding: 3px;
+   padding-bottom: 10px;
+   justify-self: self-end;
+   color:white;
+}
+.sources {
+   Display: grid;
+   float:left;
+}
+.sources ol li a:hover {
+   color: green;
+}
+
+h2 {
+   margin-left: 20px;
+   color: white;
+}
+#salinaImg {
+   float:left;
+   margin: 10px;
+}
+#img-caption {
+   text-align: right;  
+}
+#image {
+  display:block;
+   max-width: none;
+   animation-name: turda;
+   animation-duration: 4s;
+  max-width: 100%;
+  height: auto;
+  display:block;
+  self-align: center;
+}
+
+@keyframes turda {
+   0% {
+      opacity: 0;  
+   }
+   50% {
+      opacity: 0.6;  
+   }
+   100% {
+      opacity: 1;  
+   }
+}
+

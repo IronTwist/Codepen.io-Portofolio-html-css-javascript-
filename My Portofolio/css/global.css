@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Miss+Fajardose');
+
+html{
+	margin: 0;
+	
+}
+body {
+	margin: 0;
+	text-align: center;
+	min-width: 260px;
+}
+#main {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid blue;
+	
+}
+
+#navbar {
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000099;
+	height: 60px;
+}
+
+#navTitle {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Miss Fajardose', cursive;
+	color: white;
+	width: 650px;
+	font-size: 58px;
+	margin: 0;
+	margin-top: 20px;
+	margin-left: 20px;
+	line-height: 25px;
+	height: 100%;
+}
+
+nav ul {
+	width: 100%;
+	text-align: right;
+	padding-right: 25px;
+	
+}
+
+
+
+.list{
+	color: white;
+	display: inline-block;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	width: 100px;
+	text-align: center;
+	padding: 0px;
+	padding-top: 5px;
+	margin-right:  10px;
+	font-size: 18px;
+	font-family: 'Anton', sans-serif;
+	border-radius: 5px;
+	text-shadow: 2px 2px black; 
+	
+}
+.list:hover {
+	background-image: linear-gradient(#000099,#000099, white );
+	
+}
+#content {
+	display:flex;
+	flex-direction: column;
+	margin-top: 58px;
+	width: 100%;
+	height: 100%;
+}
+
+#row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	display:flex;
+	flex-flow: row wrap;
+}
+
+#welcome-section {
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(#000099,white, white );
+}
+
+#welcome-section h1 {
+	font-size: 38px;
+	font-family: 'Pacifico', cursive;
+	
+}
+#welcome-section p{
+	margin-left: 180px;
+	margin-top: -20px;
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+}
+
+#projects {
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-color: #98e6e6;
+	border: 10px solid dimgray;
+}
+.project-tile {
+	font-family: 'Anton', cursive;
+	font-size: 32px;
+	margin: 40px 0;
+	text-shadow: 3px 3px white; 
+}
+
+.example {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+.example > div {
+	width: 300px;
+	height: auto;
+	margin: 20px;
+	background-color: white;
+	border:1px solid black;
+	border-radius: 5px;
+}
+
+.example > div > h2{
+	font-size: 18px;
+	background-color: #696969;
+	height: 60px;
+	margin:1;
+	line-height: 60px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+.example > div > h2 > a{
+	text-decoration: none;
+	color: white;
+}
+
+.example > div > h2 > a:hover{
+	text-decoration: none;
+	color: yellow;
+}
+.example >div:hover {
+	border:1px solid yellow;
+}
+
+.dot {
+	display: flex;
+	justify-content: center;
+	justify-content: flex-start;
+	width: 100%;	
+	height: 28px;
+	background-color: dimgrey;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.dot > div{
+	 margin-top: 13px;
+	 margin-left: 10px;
+ 	 height: 12px;
+ 	 width: 12px;
+ 	 background-color: #bbb;
+ 	 border-radius: 50%;
+ 	 display: inline-block;
+	 background-color: white;
+	
+}
+
+button {
+	width: 180px;
+	height: 50px;
+	border-radius: 5px;
+	box-shadow: 1px 1px black;
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+	margin-bottom:  20px;
+	margin-right: 40px;
+	float: right;
+}
+button:hover{
+	background-color: yellow;
+}
+
+#contact{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 800px;
+	margin-top: 80px;
+	background-image: linear-gradient(white, white, #000099 );
+}
+#contact h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 38px;
+}
+#contact p {
+	margin-top: -30px;
+	padding-left: 80px;
+	font-family: 'Pacifico', cursive;
+	font-size: 17px;
+}
+
+#contactDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	width: 100%;
+	margin-top: 80px;
+	flex-wrap: wrap;
+}
+#contactDiv > div{
+	flex-wrap: wrap;
+	width: 140px;
+	box-shadow: 15px 5px black;
+	border-radius: 50%;
+	height: 140px;
+	padding-top: 0px;
+	line-height: 140px;
+	font-family: 'Pacifico', cursive;
+	font-size: 22px;
+	
+}
+
+#contactDiv > div:hover {
+	background-image: radial-gradient(white, #8989D0,#8989D0);
+}
+
+#contactDiv > div > a {
+	text-decoration: none;
+	color: black;
+	text-shadow: 1px 1px white; 
+} 
+
+#footer {
+	width:100%;
+	height: 60px;
+	background-color:coral;
+	
+}
+#footer div h3 {
+	text-shadow: 1px 1px white; 
+}
+
+@media only screen and (max-width: 750px){
+
+	#navbar {
+		
+		height: 123px;
+	}
+}
+
+#helloAnim {
+	animation-name: hello;
+	animation-duration: 2s;
+}
+
+
+@keyframes hello{
+	0%{
+		margin-left: -5000px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+
+
+
+
+
+
+

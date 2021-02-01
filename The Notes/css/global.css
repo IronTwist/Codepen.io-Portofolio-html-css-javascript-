@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Srisakdi:1400,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+body{
+      background-color: darkcyan;
+    /* text-align: center;
+    margin: 0px auto; */
+    /* background-image: linear-gradient(blue , white,blue);*/ 
+  padding-top: 20px;
+  }
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    border: 1px solid black; 
+    margin: 0px auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: -20px;
+}
+
+#titlu{
+    color: orange;
+    margin-left: 30px;
+    width:400px;
+    border: 0px solid green;
+    font-family: 'Srisakdi', cursive;
+  text-shadow: 2px 2px black;
+}
+
+#time {
+  width: 150px;
+  position: absolute;
+  margin-left: 650px;
+  margin-top: 20px;
+  font-size: 22px;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+}
+
+#rowEdit {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+    width: 600px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    background-color: lightskyblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 30px 10px 10px;
+}
+
+.buttonSterge{
+  width: 80px;
+  margin: 10px 0px 0px 530px;
+  
+}
+
+ li {
+    list-style-type: none;
+   width: 600px;
+}
+
+#menu {
+    display:flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width:600px;
+    align-content: flex-start;
+}
+.spaceBt {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+#slideMenu {
+    display: none;
+    flex-direction: row;
+    width: 500px;
+    padding-top: 100px;
+    background-color: gray;
+  margin :10px;
+}
+
+
+
+.addText {
+  width: 400px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buttonAdd {
+  width: 150px;
+  height: 30px;
+  margin: 10px 0 0 353px;
+  background-image: linear-gradient( white,  white, lightskyblue,  lightskyblue);
+  border-radius: 15px;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
+.buttonAdd:hover{
+  background-image: linear-gradient(white, lightskyblue,  lightskyblue);
+  color: black;
+}

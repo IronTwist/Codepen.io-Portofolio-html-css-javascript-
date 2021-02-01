@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>My List Note Project</title>
+   <link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body onload="afisare.elementeDeAfisat()">
+    <div id="container" >
+        <h1 id="titlu" onclick="changeBackground(), changeFontColor()">The Notes</h1>
+        <div id="time">t</div>
+        <hr style="width: 180px; margin-right: 0px;"><button style="width: 180px; margin-right: 0px; margin-left: 620px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" onclick="aboutDetails()">About</button></button><hr style="width: 780px;margin-right: 0px; ">
+        <div id="row">
+
+        </div>
+        <div id ="menu">
+            <div class="spaceBt">
+                <div class="inputText">
+                    <textarea id="addText" class="addText" type="text" placeholder="Write new note here" ></textarea>
+                </div>
+            </div>
+            
+            
+        <button class="buttonAdd" onclick="carnetel.adaugaInLista()" name="buttonAdd">Add New Note</button>
+        </div>
+        
+    </div>
+    
+<script src="js/theNotes.js"></script>
+<footer>
+        <p style="text-align:center;color: white;">Made by Fratean Razvan</p>
+</footer>
+</body>
+</html>

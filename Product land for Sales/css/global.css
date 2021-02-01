@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+html {
+	min-width: 480px;
+}
+
+body {
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	background-image: linear-gradient(180deg,#000066,#e5e5cc,#e5e5cc, #e5e5cc,#000066);
+	min-width: 480px;
+}
+
+#main {
+	display: flex;
+	flex-grow: 1;
+	margin-top: 76px;
+	min-width: 480px;
+}
+
+#header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 55px;
+	position: fixed;
+	background-image: linear-gradient(180deg,#000066, #13136E);
+	min-width: 480px;
+}
+
+@media (max-width: 1200px) {
+	#header {
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		height: 150px;
+	}
+	#main {
+		margin-top: 160px;
+		min-width: 480px;
+	}
+	
+	#nav-bar {
+		margin-top: -30px;;
+	}
+	.nav-link {
+		margin-top: -80px;
+	}
+	
+}
+
+#header-img {
+	float: left;
+	width: 180px;
+	margin-left: 20px
+}
+
+@media (max-width: 1200px) {
+	#header-img {
+	width: 300px;
+	margin-top: -10px;
+	}
+}
+.title {
+	color: white;
+	width: 490px;
+	justify-content: flex-start;
+	align-content: stretch;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 32px;
+	margin-top: 0px;
+}
+@media (max-width: 1200px) {
+		.title {
+		margin-top: -30px;
+	}
+	
+	}
+#nav-bar {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	margin-right: 20px;
+	margin-bottom: -5px;
+	
+}
+
+#navButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:0;
+	padding: 0 10px;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+
+.nav-link {
+	color: black;
+	margin: auto;
+	border-radius: 10%;
+	padding: 10px 10px 0 10px;
+	text-decoration: none;
+	background-image: linear-gradient(180deg,#000066, #ff0000,#ff0000 );
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	width: 75px;
+	
+}
+.nav-link:hover {
+	background-image: linear-gradient(180deg, #000066, #ff0000, white);
+}
+
+
+#content {
+	flex: 20 1 0%;
+	background-color: #e5e5cc;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+#row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #e5e5cc;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.know {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	margin-top: -80px;
+}
+
+.know div:nth-child(2) {
+	display: flex;
+    flex-direction: column;
+	align-self: center;
+}
+
+.know h2 {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.know h2, article {
+	margin:0;
+}
+
+.listImg {
+	width: 200px;
+	height: 200px;
+	align-content: flex-start;
+	margin-right: 100px;
+}
+
+.knowImg {
+	width: 200px;
+	height: 200px;
+}
+
+#exaFont {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 45px;
+	margin-top: -40px;
+	margin-bottom: -2px;
+	border-bottom: 2px solid white;
+	padding-bottom: 10px;
+}
+
+#examples {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.artS {
+	display: flex;
+	flex-direction: column;
+}
+.artS div:nth-child(1) {
+	width: 20%;
+}
+.artS div:nth-child(2) {
+	width: 60%;
+}
+.artS div:nth-child(3) {
+	width: 20%;
+}
+
+.artsExp {
+	display: flex;
+	flex-direction: row;
+	margin-top: -80px;
+}
+
+.artsExp div:nth-child(1){
+	width: 100%;
+	padding: 10px 10px;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-right: 5px;
+}
+.artsExp div:nth-child(1):hover {
+	border: 2px solid black;
+}
+.artsExp div:nth-child(2){
+	width: 100%;
+	padding: 10px 10px;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+.artsExp div:nth-child(2):hover {
+	border: 2px solid black;
+}
+
+.befAft {
+	display: flex;
+	flex-direction: row;
+}
+.befAft div:nth-child(1){
+	width: 15%;
+}
+.befAft div:nth-child(2){
+	width: 70%;
+	padding: 10px 10px;
+	padding-bottom: 25px;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+.befAft div:nth-child(3){
+	width: 15%;
+}
+.befAft div:nth-child(2):hover {
+	border: 2px solid black;
+}
+#videoTitle {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 22px;
+}
+
+#priceTag {
+	display: flex;
+	flex-direction: row;
+	width: 700px;
+	
+}
+#priceTag div:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 10px;
+	width: 100%;
+	padding: 5px;
+	border: 2px solid black;
+	margin-right: 25px;
+}
+#priceTag div:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 10px;
+	width: 100%;
+	padding: 5px;
+	border: 2px solid black;
+	margin-right: 25px;
+}
+#priceTag div:nth-child(3){
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 10px;
+	width: 100%;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 40px;
+	align-content: center;
+	font-family: 'Kaushan Script', cursive;
+}
+
+#contact div:nth-child(2) input{
+	width: 220px;
+	
+}
+
+#contact div:nth-child(3) button{
+	width: 120px;
+	height: 40px;
+	margin-top: 20px;
+	}
+#buyBut {
+	width: 120px; 
+	height: 40px; 
+	align-self: center;
+	margin-top: 20px; 
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-family: 'Pacifico', cursive;
+}
+#buyBut:hover {
+	background-color: blueviolet;
+	color: white;
+}
+#submit {
+	margin-top: 20px;
+	width: 100px;
+	height: 50px;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+}
+#submit:hover {
+	background-color: blueviolet;
+	color: white;
+}
+#leftCont {
+	display: flex;
+	flex: 1 1 0%;
+	order: -1;
+	
+}
+
+#rightCont {
+	display: flex;
+	flex: 1 1 0%;
+}
+
+#footer {
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+#footer div:nth-child(1){
+	flex: 0.7 1 0%;
+}
+#footer div:nth-child(2){
+	flex: 20 1 0%;
+	border-radius: 5px;
+	background-color: #E5E5CC;
+	height: 60px;
+}
+#footer div:nth-child(2) a{
+	text-decoration: none;
+	float: right;
+	margin-right:  40px;
+	padding: 20px 0 0 0;
+	text-transform: uppercase;
+}
+#footer div:nth-child(3){
+	flex: 0.7 1 0%;
+}
+@media (max-width: 1200px) {
+	#footer div:nth-child(2){
+		flex-direction: column;
+		min-width: 300px;
+		float: :left;
+		height: 100%;
+	}
+	#footer div:nth-child(2) a{
+		float: left;
+	}
+}
+
+

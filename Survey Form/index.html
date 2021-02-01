@@ -1,0 +1,139 @@
+<!-- Made by Fratean Razvan Friday, February 6, 2019 9:14:33 PM -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <link rel="stylesheet" type="text/css" href="css/global.css" />
+   <title>My Survey Form</title>
+</head>
+<body>
+  <div id="container">
+      <h1 id="title">My Survey Form</h1>
+
+      <div id="form-division">
+         <p id="description">Let me know if you like my survey form - just for test</p>
+          <form id="survey-form"." method="POST">
+           <div id="row">
+                  <div class="label">
+                     <label for="name" id="name-label">Name:</label>
+                  </div>
+                  <div class="inputCSS">
+                     <input type="text" id="name" name="name" placeholder="Enter your name" required></input>
+                  </div>
+				
+           </div>
+           <div id="row">
+
+                  <div class="label">
+                     <label for="email" id="email-label">Email:</label>
+                  </div>
+                  <div class="inputCSS">
+                     <input type="email" id="email" name="email" placeholder="Enter your Email" required></input>
+                  </div>
+
+           </div>
+
+           <div id="row">
+
+                  <div class="label">
+                     <label for="age" id="number-label">Age:</label>
+                  </div>
+                  <div class="inputCSS">
+                     <input type="number" id="number" name="age" placeholder="Enter your age" max="120" min="12" required />
+                  </div>
+
+           </div>
+
+           <div id="row">
+
+                  <div class="label">
+                     <label for="rolPos">What is your current rol? </label>
+                  </div>
+                  <div class="inputCSS">
+                     <select id="dropdown" name="rolPos">
+                        <option disabled value>Selectan option</option>
+                        <option value="student">Student</option>
+                        <option value="teacher" selected>Teacher</option>
+                        <option value="hobby">Hobby</option>
+                        <option value="other">Other</option>
+                     </select>
+                  </div>
+
+           </div>
+
+           <div id="row">
+
+                  <div class="label">
+                     <label for="hire">Would you like to hire me?</label>
+                  </div>
+                  <div class="inputCSS">
+                     <ul id="radioList" style="list-style: none;">
+                        <li><label><input type="radio" name="radioButton" value="1">Definitely</input></label></li>
+                        <li><label><input type="radio" name="radioButton" value="2">Maybe</label></li>
+                        <li><label><input type="radio" name="radioButton" value="3">Not sure</label></li>
+                        <li><label><input type="radio" name="radioButton" value="4">Never</label></li>
+                     </ul>
+                  </div>
+
+           </div>
+
+            <div id="row">
+
+                  <div class="label">
+                     <label for="likeSurvey">How do you like the survey?</label>
+                  </div>
+                  <div class="inputCSS">
+                     <select id="like" name="likeSurvey" required>
+                        <option disabled selected value >Select an option</option>
+                        <option value="cool">Really cool</option>
+                        <option value="notBad">Not bad</option>
+                        <option value="needImprovement">Need more improvement</option>
+                        <option value="dontLike">Don't like it</option>
+                     </select>
+                  </div>
+
+           </div>
+
+            <div id="row">
+
+                  <div class="label">
+                     <label for="likeSurvey">What programming or developing language do you prefer?</label>
+                  </div>
+                  <div class="inputCSS">
+                     <ul id="checkboxList" style="list-style: none;">
+                        <li><label><input type="checkbox" name="checkboxButton" value="1">HTML,CSS, Javascript/input></label></li>
+                        <li><label><input type="checkbox" name="checkboxButton" value="2">PHP & Mysql</label></li>
+                        <li><label><input type="checkbox" name="checkboxButton" value="3">Python with Django</label></li>
+                        <li><label><input type="checkbox" name="checkboxutton" value="4">C/C++ and Java</label></li>
+                     </ul>
+                  </div>
+
+           </div>
+
+            <div id="row">
+
+                  <div class="label">
+                     <label for="likeSurvey">Leave a comment</label>
+                  </div>
+                  <div class="inputCSS">
+                    <textarea id="comment" class="textareaStyle" name="comment" placeholder="Enter your comment here..."></textarea>
+                  </div>
+
+           </div>
+
+
+           <div id="row">
+                  <button type="submit" id="submit" >Submit</button>
+                  <button type="reset" id="button" >Clean</button>
+           </div>
+												  
+            </div>
+
+          </form>
+
+      </div>
+    
+  </div>
+</body>
+</html>

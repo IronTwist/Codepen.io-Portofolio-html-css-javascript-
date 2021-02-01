@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>My List Note Project</title>
+   <link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body onload="afisare.elementeDeAfisat(), blink()">
+    <div id="container" >
+        <h1 id="titlu" onclick="">The Notes</h1>
+        <div id="time">t</div>
+        <hr style="width: 80px; margin-right: 0px;"><button style="position:absolute; width: 80px; margin-right: 0px; margin-left: 719px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"  id="about" onclick="aboutDetails()">About</button></button><hr style="width: 780px;margin-right: 0px; ">
+        <div id="row">
+
+        </div>
+        <div id ="menu">
+            <div class="spaceBt">
+                <div class="inputText">
+                    <textarea id="addText" class="addText" type="text" placeholder="Write new note here" ></textarea>
+                </div>
+            </div>
+            
+            
+        <button class="buttonAdd" onclick="carnetel.adaugaInLista(), window.location.reload()" name="buttonAdd">Add New Note</button>
+        <button class="buttonAdd" onclick="carnetel.stergeToate(), window.location.reload()" name="buttonAdd" >Delete all notes</button>
+        </div>
+        
+    </div>
+    
+<script src="js/theNotes.js"></script>
+<footer>
+        <p style="text-align:center;color: white;">Made by Fratean Razvan</p>
+</footer>
+</body>
+</html>

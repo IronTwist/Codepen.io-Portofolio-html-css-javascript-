@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Technical Documentation Page</title>
+	
+<link href="css/global.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav id="navbar">
+	<header id="header">Java Script Documentation</header>
+		<br>
+		<ul>
+			<a class="nav-link" href="#What_is_JavaScript" ><li class="hover">What is JavaScript, really?</li></a>
+			<a class="nav-link" href="#Hello_World" ><li class="hover">A "hello world" example</li></a>
+			<a class="nav-link" href="#Variables" ><li class="hover">Variables</li></a>
+			<a class="nav-link" href="#Comments" ><li class="hover">Comments</li></a>
+			<a class="nav-link" href="#Operators" ><li class="hover">Operators</li></a>
+			<a class="nav-link" href="#Conditionals" ><li class="hover">Conditionals</li></a>
+			<a class="nav-link" href="#Functions" ><li class="hover">Functions</li></a>
+			<a class="nav-link" href="#Events" ><li class="hover">Events</li></a>
+			<a class="nav-link" href="#Creating_a _string" ><li class="hover">Creating a string</li></a>
+			<a class="nav-link" href="#Concatenating_strings" ><li class="hover">Concatenating strings</li></a>
+			<a class="nav-link" href="#Creating_an_array" ><li class="hover">Creating an array</li></a>
+			<a class="nav-link" href="#Accessing_and_modifying_array_items" ><li class="hover">Accessing and modifying array items</li></a>
+			<a class="nav-link" href="#Finding_the_length_of_an_array" ><li class="hover">Finding the length of an array</li></a>
+			<a class="nav-link" href="#Conclusion" ><li class="hover">Conclusion</li></a>
+			
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="What_is_JavaScript">
+		<header>What is JavaScript</header>
+    <article>  
+      <p>
+		  JavaScript ("JS" for short) is a full-fledged dynamic programming language that, when applied to an HTML document, can provide dynamic interactivity on websites. It was invented by Brendan Eich, co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation.
+	  </p>
+		<p>
+			JavaScript is incredibly versatile. You can start small, with carousels, image galleries, fluctuating layouts, and responses to button clicks. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+		</p>
+		<p>
+			JavaScript itself is fairly compact yet very flexible. Developers have written a large variety of tools on top of the core JavaScript language, unlocking a vast amount of extra functionality with minimum effort. These include:
+		</p>
+		<ul>
+			<li>
+				Browser Application Programming Interfaces (APIs) — APIs built into web browsers, providing functionality like dynamically creating HTML and setting CSS styles, collecting and manipulating a video stream from the user's webcam, or generating 3D graphics and audio samples.
+			</li>
+			<li>
+				Third-party APIs — Allow developers to incorporate functionality in their sites from other content providers, such as Twitter or Facebook.
+			</li>
+			<li>
+				Third-party frameworks and libraries — You can apply these to your HTML to allow you to rapidly build up sites and applications.
+			</li>
+		</ul>
+		</artice>
+		</section>
+		<section class="main-section" id="Hello_World">
+			<header>Hello World</header>
+			<article>
+				<p>
+					JavaScript is one of the most lively web technologies, and as you start to get good at using it, your websites will enter a new dimension of power and creativity.
+					However, becoming comfortable with JavaScript is a little harder than becoming comfortable with HTML and CSS. You may have to start small and keep working in small consistent steps. To start, we'll show how to add some basic JavaScript to your page, creating a "hello world!" example
+				</p>
+				<code>
+				<pre class="code">
+					function greetMe(yourName) {
+					  alert("Hello " + yourName);
+					}
+					greetMe("World");
+					</pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Variables">
+			<header>Variables</header>
+			<article>
+				<p>
+					Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by any name you want to call it:
+				</p>
+				<code><pre class="code">
+					var myVariable;
+					</pre>
+				</code>
+				<p>A semicolon at the end of a line indicates where a statement ends; it is only absolutely required when you need to separate statements on a single line. </p>
+				<p>So why do we need variables? Well, variables are needed to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change the image displayed in an image gallery.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Comments">
+			<header>Comments</header>
+			<article>
+				<p>
+					You can put comments into JavaScript code, just as you can in CSS:
+				</p>
+				<code><pre class="code">
+					/*Everything in between is a comment.*/
+					// This is a comment
+					</pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Operators">
+			<header>Operators</header>
+			<article>
+				<p>
+					An operator is a mathematical symbol which produces a result based on two values (or variables). In the following table you can see some of the simplest operators, along with some examples to try out in the JavaScript console.
+				</p>
+				<code><pre class="code">
+					+, -, *, /, =, ==, ==, !=
+					  </pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Conditionals">
+			<header>Conditionals</header>
+			<article>
+				<p>
+					Conditionals are code structures which allow you to test if an expression returns true or not, running alternative code revealed by its result. A very common form of conditionals is the if ... else statement. For example:
+				</p>
+				<code><pre class="code">
+		var iceCream = 'chocolate';
+		if (iceCream === 'chocolate') {
+	    alert('Yay, I love chocolate ice cream!');    
+		} else {
+		 alert('Awwww, but chocolate is my favorite...');    
+		}
+					</pre>
+				</code>
+				<p>The expression inside the if ( ... ) is the test — this uses the identity operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code is run. If the comparison is not true, the first block is skipped and the second code block, after the else statement, is run instead.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Functions">
+			<header>Functions</header>
+			<article>
+				<p>
+					Functions are a way of packaging functionality that you wish to reuse. When you need the procedure you can call a function, with the function name, instead of rewriting the entire code each time. You have already seen some uses of functions above, for example:
+				</p>
+				<code><pre class="code">
+					var myVariable = document.querySelector('h1');
+					alert('hello!');
+					</pre>
+				</code>
+				<p>These functions, document.querySelector and alert, are built into the browser for you to use whenever you desire.</p>
+				<p>
+				The good news is you can define your own functions — in this next example we write a simple function which takes two numbers as arguments and multiplies them:
+				</p>
+				<code><pre class="code">
+		function multiply(num1,num2) {
+		var result = num1 * num2;
+		return result;
+		}
+		multiply(4, 7);
+		multiply(20, 20);
+		multiply(0.5, 3);
+					</pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Events">
+			<header>Events</header>
+			<article>
+				<p>
+					Real interactivity on a website needs events. These are code structures which listen for things happening in browser, running code in response. The most obvious example is the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
+				</p>
+				<code><pre class="code">
+				document.querySelector('html').onclick = function() {
+				alert('Ouch! Stop poking me!');
+				}
+					</pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Creating_a _string">
+			<header>Creating a string</header>
+			<article>
+				<p>
+					To start with, enter the following lines,  we are declaring a variable, initializing it with a string value, and then returning the value. 
+				</p>
+				<code><pre class="code">
+					var string = 'The revolution will not be televised.'; string;
+					</pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Concatenating_strings">
+			<header>Concatenating strings</header>
+			<article>
+				<p>
+					Concatenate is a fancy programming word that means "join together". Joining together strings in JavaScript uses the plus (+) operator, the same one we use to add numbers together, but in this context it does something different. Let's try an example in our console.
+				</p>
+				<code><pre class="code">
+						var one = 'Hello, ';
+						var two = 'how are you?';
+						var joined = one + two;
+						joined;
+					</pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Creating_an_array">
+			<header>Creating an array</header>
+			<article>
+				<p>
+					Arrays are constructed of square brackets, which contain a list of items separated by commas.
+
+					Let's say we wanted to store a shopping list in an array — we'd do something like the following.
+					In this case, each item in the array is a string, but bear in mind that you can store any item in an array — string, number, object, another variable, even another array. You can also mix and match item types — they don't all have to be numbers, strings, etc. Try these:
+					Enter the following lines into your console:
+				</p>
+				<code><pre class="code">
+					var shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+					shopping;
+					var sequence = [1, 1, 2, 3, 5, 8, 13];
+					var random = ['tree', 795, [0, 1, 2]];
+					</pre>
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Accessing_and_modifying_array_items">
+			<header>Accessing and modifying array items</header>
+			<article>
+				<p>
+					You can then access individual items in the array using bracket notation, in the same way that you accessed the letters in a string.
+				</p>
+				<code><pre class="code">
+					shopping[0];
+					// returns "bread"
+					shopping[0] = 'tahini';
+					shopping;
+					// shopping will now return [ "tahini", "milk", "cheese", "hummus", "noodles" ]
+					</pre>
+				</code>
+			</article>
+		</section>
+		
+		<section class="main-section" id="Finding_the_length_of_an_array">
+			<header>Finding the length of an array</header>
+			<article>
+				<p>
+					You can find out the length of an array (how many items are in it) in exactly the same way as you find out the length (in characters) of a string — by using the length property. Try the following:
+				</p>
+				<code><pre class="code">
+						
+						sequence.length;
+					</pre>
+				</code>
+				
+			</article>
+		</section>
+		<section class="main-section" id="Conclusion">
+			<header>Conclusion</header>
+			<article>
+				<p>
+					After reading through this article, we are sure you will agree that arrays seem pretty darn useful; you'll see them crop up everywhere in JavaScript, often in association with loops in order to do the same thing to every item in an array. We'll be teaching you all the useful basics there are to know about loops in the next module, but for now you should give yourself a clap and take a well-deserved break; you've worked through all the articles in this module!
+
+T					he only thing left to do is work through this module's assessment, 						which will test your understanding of the articles that came before it.
+				</p>
+				
+				
+			</article>
+			<header>Reference</header>
+			<p>All the documentation in this page is taken from and more sources on:</p>
+			<ul>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN</a></li>
+				<li><a href="https://www.w3schools.com/js/">w3schools.com</a></li>
+			</ul>
+		</section>
+		
+		
+	</main>
+	
+</body>
+</html>
